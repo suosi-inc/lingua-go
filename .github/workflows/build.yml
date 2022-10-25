@@ -31,15 +31,15 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set Up Go
-        uses: actions/setup-go@v2
+        uses: actions/setup-go@v3
         with:
-          go-version: 1.16.x
+          go-version: '1.18'
 
       - name: Store or retrieve Go modules cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ~/go/pkg/mod
           key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
@@ -52,6 +52,6 @@ jobs:
         run: go test -coverprofile=coverage.txt -covermode=atomic
 
       - name: Upload code coverage report to Codecov
-        uses: codecov/codecov-action@v1
+        uses: codecov/codecov-action@v3
         with:
           files: ./coverage.txt
