@@ -2,4 +2,4 @@
 
 <br>
 
-https://github.com/pemistahl/lingua-go
+forked from https://github.com/pemistahl/lingua-go
