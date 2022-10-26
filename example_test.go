@@ -18,7 +18,6 @@ package lingua_test
 
 import (
 	"fmt"
-	"github.com/pemistahl/lingua-go"
 )
 
 func Example_basic() {

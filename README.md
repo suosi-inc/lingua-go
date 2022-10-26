@@ -2,11 +2,11 @@
 
 <br>
 
-[![Build Status](https://github.com/pemistahl/lingua-go/workflows/build/badge.svg?branch=main)](https://github.com/pemistahl/lingua-go/actions?query=workflow%3A%22build%22+branch%3Amain)
+[![Build Status](https://github.com/suosi-inc/lingua-go/workflows/build/badge.svg?branch=main)](https://github.com/suosi-inc/lingua-go/actions?query=workflow%3A%22build%22+branch%3Amain)
 [![codecov](https://codecov.io/gh/pemistahl/lingua-go/branch/main/graph/badge.svg)](https://codecov.io/gh/pemistahl/lingua-go)
 [![supported languages](https://img.shields.io/badge/supported%20languages-75-green.svg)](#supported-languages)
-[![Go Reference](https://pkg.go.dev/badge/github.com/pemistahl/lingua-go.svg)](https://pkg.go.dev/github.com/pemistahl/lingua-go)
-[![Go Report Card](https://goreportcard.com/badge/github.com/pemistahl/lingua-go)](https://goreportcard.com/report/github.com/pemistahl/lingua-go)
+[![Go Reference](https://pkg.go.dev/badge/github.com/suosi-inc/lingua-go.svg)](https://pkg.go.dev/github.com/suosi-inc/lingua-go)
+[![Go Report Card](https://goreportcard.com/badge/github.com/suosi-inc/lingua-go)](https://goreportcard.com/report/github.com/suosi-inc/lingua-go)
 [![license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 ## <a name="table-of-contents"></a> Table of Contents
@@ -184,10 +184,10 @@ by *CLD3* or *Whatlanggo* are simply ignored during the detection process.
 The box plot below shows the distribution of the averaged accuracy values for all three performed tasks:
 Single word detection, word pair detection and sentence detection. *Lingua* clearly outperforms its contenders.
 Bar plots for each language and further box plots for the separate detection tasks can be found in the file
-[ACCURACY_PLOTS.md](https://github.com/pemistahl/lingua-go/blob/main/ACCURACY_PLOTS.md).
+[ACCURACY_PLOTS.md](https://github.com/suosi-inc/lingua-go/blob/main/ACCURACY_PLOTS.md).
 Detailed statistics including mean, median and standard deviation values for each language and classifier are
 available in the file
-[ACCURACY_TABLE.md](https://github.com/pemistahl/lingua-go/blob/main/ACCURACY_TABLE.md).
+[ACCURACY_TABLE.md](https://github.com/suosi-inc/lingua-go/blob/main/ACCURACY_TABLE.md).
 
 <img src="https://raw.githubusercontent.com/pemistahl/lingua-go/main/cmd/images/plots/boxplot-average.png" alt="Average Detection Performance" />
 
@@ -223,7 +223,7 @@ and all languages by doing:
 For *gocld3* to run successfully, you need to install the exact 
 [version 3.17.3](https://github.com/protocolbuffers/protobuf/releases/tag/v3.17.3) of Google's protocol buffers which is a bit
 unfortunate. For each detector and language, a test report file is then written into
-[`/accuracy-reports`](https://github.com/pemistahl/lingua-go/tree/main/cmd/accuracy-reports).
+[`/accuracy-reports`](https://github.com/suosi-inc/lingua-go/tree/main/cmd/accuracy-reports).
 As an example, here is the current output of the *Lingua* German report:
 
 ```
@@ -246,14 +246,14 @@ Erroneously classified as Dutch: 0.20%, Latin: 0.10%
 
 ## 7. <a name="library-dependency"></a> How to add it to your project? <sup>[Top ▲](#table-of-contents)</sup>
 
-    go get github.com/pemistahl/lingua-go@v1.0.5
+    go get github.com/suosi-inc/lingua-go@v1.0.5
 
 ## 8. <a name="library-build"></a> How to build? <sup>[Top ▲](#table-of-contents)</sup>
 
 *Lingua* requires at least Go version 1.16.
 
 ```
-git clone https://github.com/pemistahl/lingua-go.git
+git clone https://github.com/suosi-inc/lingua-go.git
 cd lingua-go
 go build
 ```
@@ -271,7 +271,7 @@ package main
 
 import (
     "fmt"
-    "github.com/pemistahl/lingua-go"
+    "github.com/suosi-inc/lingua-go"
 )
 
 func main() {
@@ -308,7 +308,7 @@ package main
 
 import (
     "fmt"
-    "github.com/pemistahl/lingua-go"
+    "github.com/suosi-inc/lingua-go"
 )
 
 func main() {
@@ -338,7 +338,7 @@ func main() {
 Be aware that the distance between the language probabilities is dependent on the length of the
 input text. The longer the input text, the larger the distance between the languages. So if you
 want to classify very short text phrases, do not set the minimum relative distance too high.
-Otherwise [`Unknown`](https://github.com/pemistahl/lingua-go/blob/main/language.go#L106) will be
+Otherwise [`Unknown`](https://github.com/suosi-inc/lingua-go/blob/main/language.go#L106) will be
 returned most of the time as in the example above. This is the return value for cases where
 language detection is not reliably possible. This value is not meant to be included in the set
 of input languages when building the language detector. If you include it, it will be
@@ -355,7 +355,7 @@ package main
 
 import (
     "fmt"
-    "github.com/pemistahl/lingua-go"
+    "github.com/suosi-inc/lingua-go"
 )
 
 func main() {
@@ -385,7 +385,7 @@ func main() {
 ```
 
 In the example above, a slice of 
-[`ConfidenceValue`](https://github.com/pemistahl/lingua-go/blob/main/confidence.go#L21) 
+[`ConfidenceValue`](https://github.com/suosi-inc/lingua-go/blob/main/confidence.go#L21) 
 is returned containing all possible languages sorted by their confidence value in descending 
 order. The values that this method computes are part of a **relative** confidence metric, not of 
 an absolute one. Each value is a number between 0.0 and 1.0. The most likely language is always 
@@ -452,9 +452,9 @@ lingua.NewLanguageDetectorBuilder().FromIsoCodes639_3(lingua.ENG, lingua.DEU)
 
 ## 10. <a name="whats-next"></a> What's next for version 1.1.0? <sup>[Top ▲](#table-of-contents)</sup>
 
-Take a look at the [planned issues](https://github.com/pemistahl/lingua-go/milestone/1).
+Take a look at the [planned issues](https://github.com/suosi-inc/lingua-go/milestone/1).
 
 ## 11. <a name="contributions"></a> Contributions <sup>[Top ▲](#table-of-contents)</sup>
 
 In case you want to contribute something to *Lingua*, please take a look at the file 
-[CONTRIBUTING.md](https://github.com/pemistahl/lingua-go/blob/main/CONTRIBUTING.md).
+[CONTRIBUTING.md](https://github.com/suosi-inc/lingua-go/blob/main/CONTRIBUTING.md).

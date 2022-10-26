@@ -41,16 +41,16 @@ Look at the other languages' directories to see how it looks like. It should be 
 12. Be happy! :-) You have successfully contributed a new language and have thereby significantly widened
 this library's fields of application.
 
-[library build url]: https://github.com/pemistahl/lingua-go#library-build
-[isocode639_1 url]: https://github.com/pemistahl/lingua-go/blob/main/isocode.go#L31
-[isocode639_3 url]: https://github.com/pemistahl/lingua-go/blob/main/isocode.go#L261
+[library build url]: https://github.com/suosi-inc/lingua-go#library-build
+[isocode639_1 url]: https://github.com/suosi-inc/lingua-go/blob/main/isocode.go#L31
+[isocode639_3 url]: https://github.com/suosi-inc/lingua-go/blob/main/isocode.go#L261
 [wikipedia isocodes list]: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
-[language url]: https://github.com/pemistahl/lingua-go/blob/main/language.go#L31
-[alphabet url]: https://github.com/pemistahl/lingua-go/blob/main/alphabet.go#L27
-[language method url]: https://github.com/pemistahl/lingua-go/blob/main/language.go#L608
-[chars to languages mapping url]: https://github.com/pemistahl/lingua-go/blob/main/constant.go#L31
-[language model files writer url]: https://github.com/pemistahl/lingua-go/blob/main/writer.go#L53
-[test data files writer url]: https://github.com/pemistahl/lingua-go/blob/main/writer.go#L194
-[language models directory url]: https://github.com/pemistahl/lingua-go/tree/main/language-models
-[testdata directory url]: https://github.com/pemistahl/lingua-go/tree/main/language-testdata
-[accuracy reporter url]: https://github.com/pemistahl/lingua-go/blob/main/cmd/accuracy_reporter.go
+[language url]: https://github.com/suosi-inc/lingua-go/blob/main/language.go#L31
+[alphabet url]: https://github.com/suosi-inc/lingua-go/blob/main/alphabet.go#L27
+[language method url]: https://github.com/suosi-inc/lingua-go/blob/main/language.go#L608
+[chars to languages mapping url]: https://github.com/suosi-inc/lingua-go/blob/main/constant.go#L31
+[language model files writer url]: https://github.com/suosi-inc/lingua-go/blob/main/writer.go#L53
+[test data files writer url]: https://github.com/suosi-inc/lingua-go/blob/main/writer.go#L194
+[language models directory url]: https://github.com/suosi-inc/lingua-go/tree/main/language-models
+[testdata directory url]: https://github.com/suosi-inc/lingua-go/tree/main/language-testdata
+[accuracy reporter url]: https://github.com/suosi-inc/lingua-go/blob/main/cmd/accuracy_reporter.go
